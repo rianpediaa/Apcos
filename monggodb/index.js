@@ -4,5 +4,5 @@ const mongoose = require('mongoose')
 module.exports={
   mongoose,
   url: dbConfig.url,
-  logindb: require('./models.js')(mongoose)
+  dagetdb: require('./models.js')(mongoose)
 }
