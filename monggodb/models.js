@@ -2,7 +2,7 @@ module.exports = mongoose => {
   const schema = mongoose.Schema(
     {
       username: { type: String },
-      keyUser: { type: String },
+      password: { type: String },
       nomer_wa: { type: String },
       saldo: { type: String },
       nomer_dana: { type: String }
