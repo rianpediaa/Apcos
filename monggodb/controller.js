@@ -1,15 +1,15 @@
 const db = require('./index')
-const Debe = db.logindb
+const Debe = db.dagetdb
 
 exports.create = (req,res)=>{
   Debe.create(req.body)
   .then(()=>res.json({
     status: 200,
-    msg: 'users berhasil register!'
+    msg: 'daget berhasil!'
   }))
   .catch(err=>res.json({
     status: 500,
-    msg: 'users gagal register!'
+    msg: 'daget gagal!'
   }))
 }
 
