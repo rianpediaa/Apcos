@@ -1,11 +1,8 @@
 module.exports = mongoose => {
   const schema = mongoose.Schema(
     {
-      username: { type: String },
-      password: { type: String },
-      nomer_wa: { type: String },
-      saldo: { type: String },
-      nomer_dana: { type: String }
+      link_daget: { type: String },
+      id_daget: { type: String }
     },{
       timestamps: true
     }
@@ -18,5 +15,5 @@ module.exports = mongoose => {
     return object;
   })
   
-  return mongoose.model('logindb', schema)
+  return mongoose.model('dagetdb', schema)
 }
