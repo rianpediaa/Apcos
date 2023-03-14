@@ -8,5 +8,5 @@ module.exports = app => {
   router.put('/:id', Kontrol.update)
   router.delete('/:id', Kontrol.delete)
   
-  app.use('/users',router)
+  app.use('/api',router)
 }
